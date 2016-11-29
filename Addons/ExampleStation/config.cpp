@@ -2,9 +2,9 @@
 
 class CfgPatches 
 {
-	class FM_StationAndrew
+	class FM_ExampleFM
 	{
 		addonRootClass = "FM_Core";
-		stationInfo[] = {"AndrewFM", 100};
+		stationInfo[] = {"ExampleFM", 100};
 	};
 };
