@@ -3,13 +3,7 @@
 
 class CfgPatches 
 {
-	class FM_Core
-	{
-		units[] = {};
-		weapons[] = {};
-		requiredAddons[] = {"A3_Data_F"};
-		requiredVersion = 0.1;
-	};
+	class FM_Core {};
 };
 
 class CfgFunctions
