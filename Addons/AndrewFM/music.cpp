@@ -1,4 +1,3 @@
-
 class CfgMusic
 {
 	class radio100
@@ -96,4 +95,65 @@ class CfgMusic
 		duration = 322;
 		sound[] = {"\FM\AndrewFM\radio\115.ogg", db+0, 1.0};
 	};
+
+	class radio116
+	{
+		duration = 196;
+		sound[] = {"\FM\AndrewFM\radio\116.ogg", db+0, 1.0};
+	};
+
+	class radio117
+	{
+		duration = 176;
+		sound[] = {"\FM\AndrewFM\radio\117.ogg", db+0, 1.0};
+	};
+
+	class radio118
+	{
+		duration = 250;
+		sound[] = {"\FM\AndrewFM\radio\118.ogg", db+0, 1.0};
+	};
+
+	class radio119
+	{
+		duration = 209;
+		sound[] = {"\FM\AndrewFM\radio\119.ogg", db+0, 1.0};
+	};
+
+	class radio120
+	{
+		duration = 220;
+		sound[] = {"\FM\AndrewFM\radio\120.ogg", db+0, 1.0};
+	};
+
+	class radio121
+	{
+		duration = 277;
+		sound[] = {"\FM\AndrewFM\radio\121.ogg", db+0, 1.0};
+	};
+
+	class radio122
+	{
+		duration = 169;
+		sound[] = {"\FM\AndrewFM\radio\122.ogg", db+0, 1.0};
+	};
+
+	class radio123
+	{
+		duration = 248;
+		sound[] = {"\FM\AndrewFM\radio\123.ogg", db+0, 1.0};
+	};
+
+	class radio124
+	{
+		duration = 198;
+		sound[] = {"\FM\AndrewFM\radio\124.ogg", db+0, 1.0};
+	};
+
+	class radio125
+	{
+		duration = 296;
+		sound[] = {"\FM\AndrewFM\radio\125.ogg", db+0, 1.0};
+	};
+
 };
