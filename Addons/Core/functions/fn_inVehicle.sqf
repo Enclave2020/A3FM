@@ -11,6 +11,7 @@
 			_radioTimeLeft = _radioTime - (_radioTrack select 1);
 			_radioTimeEnd = _radioTime + ((_radioTrack select 0) call FM_fnc_duration);
 				
+			0 fadeMusic 0.6;
 			playMusic [_radioTrack select 0, _radioTimeLeft];
 			_radioPlaying = _radioStation;
 			
