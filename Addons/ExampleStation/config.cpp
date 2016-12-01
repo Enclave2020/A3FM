@@ -5,6 +5,14 @@ class CfgPatches
 	class FM_ExampleFM
 	{
 		addonRootClass = "FM_Core";
-		stationInfo[] = {"ExampleFM", 100};
+	};
+};
+
+class CfgStations
+{
+	class ExampleFM
+	{
+		name = "ExampleFM";
+		trackBegin = 200;
 	};
 };
