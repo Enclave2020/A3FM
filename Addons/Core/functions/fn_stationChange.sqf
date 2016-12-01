@@ -7,10 +7,10 @@
 	
 	if (_increasing) then {
 		_current = _current + 1;
-		_current = _current min _max; 
+		if (_current > _max) then {_current = 0};
 	} else {
 		_current = _current - 1;
-		_current = _current max 0;
+		if (_current < 0) then {_current = _max};
 	};
 	
 	vehicle player setVariable ["FM_Station", _current, True];

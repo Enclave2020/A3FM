@@ -19,7 +19,7 @@ class CfgFunctions
 			class stationShow {};
 			class stationChange {};
 			class stationSim {};
-			class init {postInit = 1};
+			class init {postInit = 1;};
 		};
 	};
 };
