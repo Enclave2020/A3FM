@@ -10,7 +10,7 @@
 	_station = missionNameSpace getVariable ["FM_Station", []] select _id;
 	while {true} do {
 		_track = Format ["radio%1", _begin + (floor random _max)];
-		_station = [_track, FM_Time];
+		_station = [_track, missionNameSpace getVariable ["FM_Time", 0]];
 		_stations = missionNameSpace getVariable ["FM_Station", []];
 		_stations set [_id, _station];
 		missionNameSpace setVariable ["FM_Station", _stations, True];
