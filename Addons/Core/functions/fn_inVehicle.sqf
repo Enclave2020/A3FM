@@ -12,13 +12,13 @@
 			(_radioStations select _radioStation) call FM_fnc_stationShow;
 			_radioTime = missionNameSpace getVariable ["FM_Time", 0];
 			_radioTrack = missionNameSpace getVariable ["FM_Station", []] select _radioStation;
-			_radioTimeLeft = _radioTime - (_radioTrack select 1);
-			_radioTimeEnd = _radioTime + ((_radioTrack select 0) call FM_fnc_duration);
+			_radioTimeOffset = _radioTime - (_radioTrack select 1);
+			_radioTimeEnd = _radioTime + (((_radioTrack select 0) call FM_fnc_duration) - _radioTimeOffset);
 			
-			["FM Time: %1. End time: %2. Time left: %3. Playing: %4", _radioTime, _radioTimeEnd, _radioTimeLeft, _radioTrack] call bis_fnc_logFormat;
+			["FM Time: %1. End time: %2. Time offset: %3. Playing: %4", _radioTime, _radioTimeEnd, _radioTimeOffset, _radioTrack] call bis_fnc_logFormat;
 			
 			0 fadeMusic 0.6;
-			playMusic [_radioTrack select 0, _radioTimeLeft];
+			playMusic [_radioTrack select 0, _radioTimeOffset];
 			_radioPlaying = _radioStation;
 			
 			"Wait to music end..." call bis_fnc_log;
