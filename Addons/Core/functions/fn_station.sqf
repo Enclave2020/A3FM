@@ -10,12 +10,11 @@
 	FM_Stations = ["FM DISABLED"];
 	FM_Station = [["", 0]];
 	
-	_stationAddons = "getText (_x >> 'addonRootClass') == 'FM_Core'" configClasses (configFile >> "cfgPatches");
-	for "_i" from 0 to count _stationAddons - 1 do {
-		_settings = getArray ((_stationAddons select _i) >> "stationInfo");
-		FM_Stations pushBack (_settings select 0);
+	_stations = "true" configClasses (configFile >> "CfgStations");
+	for "_i" from 0 to count _stations - 1 do {
+		FM_Stations pushBack (getText (_stations select _i >> "name"));
 		FM_Station pushBack ["", 0];
-		[_settings select 1, _i + 1] spawn FM_fnc_stationSim;
+		[getNumber (_stations select _i >> "trackBegin"), _i + 1] spawn FM_fnc_stationSim;
 	};
 	
 	publicVariable "FM_Stations";
