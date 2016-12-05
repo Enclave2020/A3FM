@@ -3,7 +3,7 @@ if (hasInterface) then {
 	player addEventHandler ["GetInMan", {[] spawn FM_fnc_inVehicle}];
 	
 	[19, [false, false, false], {
-		if (vehicle player != player) then {
+		if ((vehicle player != player) and (isNull (uiNameSpace getVariable ["FM_Gui", objNull]))) then {
 			createDialog "radioGUI";
 			call FM_fnc_guiUpdate;
 		};
