@@ -2,7 +2,7 @@
 $[
 	1.063,
 	["RadioGUI",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
-	[1200,"",[1,"radio.paa",["0.207742 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.584516 * safezoneW","0.476 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1200,"",[1,"\FM\radio.paa",["0.207742 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.584516 * safezoneW","0.476 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1100,"",[1,"HELLO WORLD",["0.521919 * safezoneW + safezoneX","0.724 * safezoneH + safezoneY","0.168048 * safezoneW","0.042 * safezoneH"],[-1,-1,-1,-1],[0,-1,-1,0],[-1,-1,-1,-1],"","-1"],[]],
 	[1201,"",[1,"#(argb,8,8,3)color(1,1,1,1)",["0.405016 * safezoneW + safezoneX","0.64 * safezoneH + safezoneY","0.0219193 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"Raise volume.","-1"],[]],
 	[1202,"",[1,"#(argb,8,8,3)color(1,1,1,1)",["0.405016 * safezoneW + safezoneX","0.794 * safezoneH + safezoneY","0.0219193 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"Lower volume.","-1"],[]],
@@ -107,6 +107,16 @@ class RadioGUI
 			h = 0.028 * safezoneH;
 			tooltip = "Previous station.";
 			onMouseButtonDown = "False call FM_fnc_stationChange";
+		};
+		class escape: RscStructuredText
+		{
+			idc = 1103;
+			x = 0.258887 * safezoneW + safezoneX;
+			y = 0.626 * safezoneH + safezoneY;
+			w = 0.0365322 * safezoneW;
+			h = 0.056 * safezoneH;
+			tooltip = "Close.";
+			onMouseButtonDown = "closeDialog 0;";
 		};
     };
 };
