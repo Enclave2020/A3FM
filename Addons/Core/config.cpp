@@ -1,5 +1,5 @@
 #include "defines.hpp"
-#include "hud.hpp"
+#include "radioGUI.hpp"
 
 class CfgPatches 
 {
@@ -16,9 +16,10 @@ class CfgFunctions
 			class inVehicle {};
 			class station {};
 			class duration {};
-			class stationShow {};
+			class guiUpdate {};
 			class stationChange {};
 			class stationSim {};
+			class vehicleVolume {};
 			class init {postInit = 1;};
 		};
 	};
