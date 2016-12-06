@@ -20,6 +20,8 @@ class CfgFunctions
 			class stationChange {};
 			class stationSim {};
 			class vehicleVolume {};
+			class show {};
+			class updateVolume {};
 			class init {postInit = 1;};
 		};
 	};
