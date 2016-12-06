@@ -7,6 +7,6 @@
 	if (_volume > 2) then {_volume = 0};
 	if (_volume < 0) then {_volume = 2};
 	
-	0 fadeMusic _volume;
+	remoteExec ["FM_fnc_updateVolume"];
 	vehicle player setVariable ["FM_Volume", _volume, True];
 	call FM_fnc_guiUpdate;
