@@ -19,6 +19,9 @@
 				
 				["FM Time: %1. End time: %2. Time offset: %3. Playing: %4", _radioTime, _radioTimeEnd, _radioTimeOffset, _radioTrack] call bis_fnc_logFormat;
 				
+				// Strange fix for a strange bug.
+				playMusic [_radioTrack select 0, _radioTimeOffset - 15];
+				playMusic [_radioTrack select 0, _radioTimeOffset + 15];
 				playMusic [_radioTrack select 0, _radioTimeOffset];
 				0 fadeMusic _radioVolume;
 				_radioPlaying = _radioStation;
