@@ -3,7 +3,7 @@
 
 class CfgPatches 
 {
-	class FM_Core {};
+	class FM {};
 };
 
 class CfgFunctions

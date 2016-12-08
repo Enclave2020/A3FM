@@ -4,7 +4,7 @@ class CfgPatches
 {
 	class FM_ExampleFM
 	{
-		addonRootClass = "FM_Core";
+		addonRootClass = "FM";
 	};
 };
 
