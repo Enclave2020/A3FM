@@ -2,10 +2,7 @@
 
 class CfgPatches 
 {
-	class FM_ExampleFM
-	{
-		addonRootClass = "FM";
-	};
+	class FM_ExampleFM {};
 };
 
 class CfgStations
