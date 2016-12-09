@@ -3,7 +3,9 @@
 
 class CfgPatches 
 {
-	class FM {};
+	class FM {
+		units[] = {};
+	};
 };
 
 class CfgFunctions
