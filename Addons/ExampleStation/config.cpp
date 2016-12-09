@@ -2,7 +2,8 @@
 
 class CfgPatches 
 {
-	class FM_ExampleFM {
+	class FM_ExampleFM 
+	{
 		units[] = {};
 	};
 };
