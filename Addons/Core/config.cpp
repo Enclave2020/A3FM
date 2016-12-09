@@ -3,7 +3,10 @@
 
 class CfgPatches 
 {
-	class FM_Core {};
+	class FM 
+	{
+		units[] = {};
+	};
 };
 
 class CfgFunctions

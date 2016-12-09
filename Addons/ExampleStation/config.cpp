@@ -2,9 +2,9 @@
 
 class CfgPatches 
 {
-	class FM_ExampleFM
+	class FM_ExampleFM 
 	{
-		addonRootClass = "FM_Core";
+		units[] = {};
 	};
 };
 
